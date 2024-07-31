@@ -1,12 +1,11 @@
-require('dotenv').config();
-const express = require('express');
-const userRouter = require('./routes/userRoutes');
+import React from 'react';
 
-const app = express();
-app.use(express.json());
-app.use('/api/users', userRouter);
+function App() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+export default App;
